@@ -39,37 +39,37 @@ packer.startup(function(use)
   use {
     'svrana/neosolarized.nvim',
     opt = true,
-    requires = { 'tjdevries/colorbuddy.nvim', opt = true},
+    requires = { 'tjdevries/colorbuddy.nvim', opt = true },
   }
-  use {'nvim-lualine/lualine.nvim', opt = true} -- Statusline
+  use { 'nvim-lualine/lualine.nvim', opt = true } -- Statusline
   use 'nvim-lua/popup.nvim'
-  use {'onsails/lspkind-nvim', opt = true} -- vscode-like pictograms
-  use {'hrsh7th/cmp-buffer', opt = true} -- nvim-cmp source for buffer words
-  use {'hrsh7th/cmp-nvim-lsp', opt = true} -- nvim-cmp source for neovim's built-in LSP
-  use {'hrsh7th/nvim-cmp', opt = true} -- Completion
-  use {'neovim/nvim-lspconfig', opt = true} -- LSP
-  use {'jose-elias-alvarez/null-ls.nvim', opt = true} -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
-  use {'williamboman/mason.nvim', opt = true}
-  use {'williamboman/mason-lspconfig.nvim', opt = true}
+  use { 'onsails/lspkind-nvim', opt = true } -- vscode-like pictograms
+  use { 'hrsh7th/cmp-buffer', opt = true } -- nvim-cmp source for buffer words
+  use { 'hrsh7th/cmp-nvim-lsp', opt = true } -- nvim-cmp source for neovim's built-in LSP
+  use { 'hrsh7th/nvim-cmp', opt = true } -- Completion
+  use { 'neovim/nvim-lspconfig', opt = true } -- LSP
+  use { 'jose-elias-alvarez/null-ls.nvim', opt = true } -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
+  use { 'williamboman/mason.nvim', opt = true }
+  use { 'williamboman/mason-lspconfig.nvim', opt = true }
 
-  use {'glepnir/lspsaga.nvim', opt = true} -- LSP UIs
-  use {'L3MON4D3/LuaSnip', opt = true}
-  use {'nvim-treesitter/nvim-treesitter', opt = true}
-  use {'windwp/nvim-ts-autotag', opt = true}
-  use {'kyazdani42/nvim-web-devicons', opt = true} -- File icons
+  use { 'glepnir/lspsaga.nvim', opt = true } -- LSP UIs
+  use { 'L3MON4D3/LuaSnip', opt = true }
+  use { 'nvim-treesitter/nvim-treesitter', opt = true }
+  use { 'windwp/nvim-ts-autotag', opt = true }
+  use { 'kyazdani42/nvim-web-devicons', opt = true } -- File icons
   use {
     'nvim-telescope/telescope.nvim',
-    keys = {';f', ';r', '\\', ';;'},
+    keys = { ';f', ';r', '\\', ';;' },
   }
-  use {'windwp/nvim-autopairs', opt = true}
-  use {'norcalli/nvim-colorizer.lua', opt = true}
+  use { 'windwp/nvim-autopairs', opt = true }
+  use { 'norcalli/nvim-colorizer.lua', opt = true }
 
-  use {'lewis6991/gitsigns.nvim', opt = true} -- Git diff marker
-  use {'akinsho/nvim-bufferline.lua', opt = true}
-  use {'RRethy/vim-illuminate', opt = true} -- highlight on current cursol word
-  use {'lukas-reineke/indent-blankline.nvim', opt = true} -- indent line
-  use {'numToStr/Comment.nvim', opt = true} --comment
-  use {'kevinhwang91/nvim-hlslens', opt = true} -- show count result search word
+  use { 'lewis6991/gitsigns.nvim', opt = true } -- Git diff marker
+  use { 'akinsho/nvim-bufferline.lua', opt = true }
+  use { 'RRethy/vim-illuminate', opt = true } -- highlight on current cursol word
+  use { 'lukas-reineke/indent-blankline.nvim', opt = true } -- indent line
+  use { 'numToStr/Comment.nvim', opt = true } --comment
+  use { 'kevinhwang91/nvim-hlslens', opt = true } -- show count result search word
   use {
     'TimUntersberger/neogit',
     requires = 'nvim-lua/plenary.nvim',
@@ -77,18 +77,18 @@ packer.startup(function(use)
   }
   use {
     "nvim-neo-tree/neo-tree.nvim",
-    keys = {"fi"},
+    keys = { "fi" },
     branch = "v2.x",
     requires = {
       "MunifTanjim/nui.nvim",
       opt = true
     },
-    wants = {"nui.nvim"}
+    wants = { "nui.nvim" }
   }
   use {
     'akinsho/toggleterm.nvim', -- terminal on neovim
     tag = '*',
-    keys = {'<C-\\>'}
+    keys = { '<C-\\>' }
   }
 
   use {
@@ -98,5 +98,4 @@ packer.startup(function(use)
   }
 
   use 'lambdalisue/mr.vim'
-
 end)

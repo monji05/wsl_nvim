@@ -46,7 +46,7 @@ vim.opt.list = true
 -- vim.opt.listchars:append "space:⋅"
 -- vim.opt.listchars:append "space:"
 
-vim.cmd [[highlight IndentBlanklineIndent1 guibg=#000 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent1 guifg=#3E4452 guibg=#000 gui=nocombine]]
 
 indent_blankline.setup({
   -- show_end_of_line = true,

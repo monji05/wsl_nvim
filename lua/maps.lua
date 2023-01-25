@@ -16,8 +16,8 @@ keymap.set('n', 'cc', ':nohl<CR>')
 keymap.set('n', '<C-r>', ':source %<CR>')
 
 -- increment / decrement
-keymap.set('n', '+', '<C-x>')
-keymap.set('n', '-', '<C-a>')
+keymap.set('n', '-', '<C-x>')
+keymap.set('n', '+', '<C-a>')
 
 -- Select all
 keymap.set('n', '<C-a>', 'gg<S-v>G')
