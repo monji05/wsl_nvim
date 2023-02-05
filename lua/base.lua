@@ -30,6 +30,8 @@ vim.opt.wildignore:append { '*/node_modules/*' }
 vim.opt.fillchars = 'diff:╱'
 vim.opt.signcolumn = 'yes'
 vim.opt.laststatus = 3
+vim.opt.clipboard:append("unnamedplus")
+vim.opt.iskeyword:append("-")
 
 -- Undercurl
 vim.cmd([[let &t_Cs = "\e[4:3m"]])

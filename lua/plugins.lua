@@ -33,6 +33,7 @@ vim.api.nvim_command([[packadd toggleterm.nvim]])
 vim.api.nvim_command([[packadd nvim-surround]])
 vim.api.nvim_command([[packadd neo-tree.nvim]])
 vim.api.nvim_command([[packadd nui.nvim]])
+vim.api.nvim_command([[packadd nvim-markdown-preview]])
 
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
@@ -97,5 +98,10 @@ packer.startup(function(use)
     opt = true
   }
 
-  use 'lambdalisue/mr.vim'
+  use {
+    'davidgranstrom/nvim-markdown-preview',
+    opt = true,
+    ft = {"markdown"}
+  }
+
 end)
