@@ -101,7 +101,7 @@ packer.startup(function(use)
   use {
     'davidgranstrom/nvim-markdown-preview',
     opt = true,
-    ft = {"markdown"}
+    ft = { "markdown" }
   }
 
 end)

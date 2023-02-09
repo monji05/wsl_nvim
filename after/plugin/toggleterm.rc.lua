@@ -13,7 +13,7 @@ toggleterm.setup {
 }
 
 function _G.set_terminal_keymaps()
-  local opts = {buffer = 0}
+  local opts = { buffer = 0 }
   vim.keymap.set('t', '<C-e>', 'exit<CR>', opts)
   vim.keymap.set('t', '<C-c>', 'clear<CR>', opts)
   vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)

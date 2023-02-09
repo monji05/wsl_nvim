@@ -111,6 +111,22 @@ nvim_lsp.intelephense.setup {
   capabilities = capabilities,
 }
 
+local _, configs = pcall(require, 'lspconfig.configs')
+configs.blade = {
+  default_config = {
+    cmd = { "laravel-dev-generators", "lsp" },
+    filetypes = { 'blade' };
+    root_dir = function(fname)
+      return nvim_lsp.util.find_git_ancestor(fname)
+    end;
+    settings = {};
+  };
+}
+nvim_lsp.blade.setup {
+  nn_attach = on_attach,
+  capabilities = capabilities,
+}
+
 nvim_lsp.tailwindcss.setup {}
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(

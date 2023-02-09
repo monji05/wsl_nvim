@@ -30,7 +30,6 @@ vim.opt.wildignore:append { '*/node_modules/*' }
 vim.opt.fillchars = 'diff:╱'
 vim.opt.signcolumn = 'yes'
 vim.opt.laststatus = 3
-vim.opt.clipboard:append("unnamedplus")
 vim.opt.iskeyword:append("-")
 
 -- Undercurl
@@ -45,3 +44,13 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 
 -- Add asterisks in block comments
 vim.opt.formatoptions:append { 'r' }
+
+-- yank to clipboard
+vim.cmd([[
+  if system('uname -a | grep microsoft') != ''
+    augroup myYank
+      autocmd!
+      autocmd TextYankPost * :call system('clip.exe', @")
+    augroup END
+  endif"")
+]])
