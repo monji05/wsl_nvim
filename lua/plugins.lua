@@ -61,6 +61,7 @@ packer.startup(function(use)
   use {
     'nvim-telescope/telescope.nvim',
     keys = { ';f', ';r', '\\', ';;' },
+    requires = "nvim-telescope/telescope-file-browser.nvim"
   }
   use { 'windwp/nvim-autopairs', opt = true }
   use { 'norcalli/nvim-colorizer.lua', opt = true }

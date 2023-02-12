@@ -34,6 +34,7 @@ require('gitsigns').setup {
     -- Text object
     map({ 'o', 'x' }, 'ih', ':<C-U>Gitsigns select_hunk<CR>')
     map('n', '<Space>d', ':Gitsigns diffthis<CR>')
-    map('n', '<Space>h', '<cmd>Gitsigns preview_hunk<CR>')
+    map('n', '<Space>h', gs.preview_hunk)
+
   end
 }

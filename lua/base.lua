@@ -26,7 +26,6 @@ vim.opt.breakindent = true
 vim.opt.wrap = false -- No Wrap lines
 vim.opt.backspace = { 'start', 'eol', 'indent' }
 vim.opt.path:append { '**' } -- Finding files - Search down into subfolders
-vim.opt.wildignore:append { '*/node_modules/*' }
 vim.opt.fillchars = 'diff:╱'
 vim.opt.signcolumn = 'yes'
 vim.opt.laststatus = 3
@@ -47,10 +46,13 @@ vim.opt.formatoptions:append { 'r' }
 
 -- yank to clipboard
 vim.cmd([[
-  if system('uname -a | grep microsoft') != ''
-    augroup myYank
-      autocmd!
-      autocmd TextYankPost * :call system('clip.exe', @")
-    augroup END
-  endif"")
+  if !empty($WSL_DISTRO_NAME)
+     let s:clip = '/mnt/c/Windows/System32/clip.exe'
+     if executable(s:clip)
+       augroup WSLYank
+         autocmd!
+         autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @0) | endif
+       augroup END
+     endif
+   endif
 ]])

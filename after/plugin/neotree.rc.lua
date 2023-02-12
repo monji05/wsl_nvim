@@ -11,7 +11,7 @@ neotree.setup({
   enable_git_status = true,
   enable_diagnostics = false,
   sort_case_insensitive = false, -- used when sorting files and directories in the tree
-  sort_function = nil , -- use a custom function for sorting files and directories in the tree 
+  sort_function = nil, -- use a custom function for sorting files and directories in the tree
   default_component_configs = {
     container = {
       enable_character_fade = true
@@ -51,8 +51,8 @@ neotree.setup({
         -- Change type
         added     = "", -- or "✚", but this is redundant info if you use git_status_colors on the name
         modified  = "", -- or "", but this is redundant info if you use git_status_colors on the name
-        deleted   = "✖",-- this can only be used in the git_status source
-        renamed   = "",-- this can only be used in the git_status source
+        deleted   = "✖", -- this can only be used in the git_status source
+        renamed   = "", -- this can only be used in the git_status source
         -- Status type
         untracked = "",
         ignored   = "",
@@ -70,9 +70,9 @@ neotree.setup({
       nowait = true,
     },
     mappings = {
-      ["<space>"] = { 
-          "toggle_node", 
-          nowait = false, -- disable `nowait` if you have existing combos starting with this char that you want to use 
+      ["<space>"] = {
+        "toggle_node",
+        nowait = false, -- disable `nowait` if you have existing combos starting with this char that you want to use
       },
       -- ["<cr>"] = "open",
       ["P"] = { "toggle_preview", config = { use_float = true } },
@@ -88,7 +88,7 @@ neotree.setup({
       ["C"] = "close_node",
       ["z"] = "close_all_nodes",
       --["Z"] = "expand_all_nodes",
-      ["a"] = { 
+      ["a"] = {
         "add",
         -- some commands may take optional config options, see `:h neo-tree-mappings` for details
         config = {
