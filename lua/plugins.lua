@@ -18,36 +18,35 @@ require('lazy').setup({
   },
   { 'nvim-lualine/lualine.nvim', lazy = true }, -- Statusline
   'nvim-lua/popup.nvim',
-  { 'onsails/lspkind-nvim', lazy = true }, -- vscode-like pictograms
-  { 'hrsh7th/cmp-nvim-lsp', lazy = true }, -- nvim-cmp source for neovim's built-in LSP
+  { 'onsails/lspkind-nvim',      lazy = true }, -- vscode-like pictograms
+  { 'hrsh7th/cmp-nvim-lsp',      lazy = true }, -- nvim-cmp source for neovim's built-in LSP
   { 'hrsh7th/nvim-cmp', -- Completion
     dependencies = 'hrsh7th/cmp-buffer',
     lazy = true
   },
-  { 'neovim/nvim-lspconfig', lazy = true }, -- LSP
-  { 'jose-elias-alvarez/null-ls.nvim', lazy = true }, --  Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
-  { 'williamboman/mason.nvim', lazy = true },
+  { 'neovim/nvim-lspconfig',             lazy = true }, -- LSP
+  { 'williamboman/mason.nvim',           lazy = true },
   { 'williamboman/mason-lspconfig.nvim', lazy = true },
+  { 'jose-elias-alvarez/null-ls.nvim',   lazy = true }, --  Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
 
-  { 'glepnir/lspsaga.nvim', lazy = true }, -- LSP UIs
-  { 'L3MON4D3/LuaSnip', lazy = true },
-  { 'nvim-treesitter/nvim-treesitter', lazy = true },
-  { 'windwp/nvim-ts-autotag', lazy = true },
-  { 'kyazdani42/nvim-web-devicons', lazy = true }, -- File icons
+  { 'glepnir/lspsaga.nvim',              lazy = true }, -- LSP UIs
+  { 'L3MON4D3/LuaSnip',                  lazy = true },
+  { 'nvim-treesitter/nvim-treesitter',   lazy = true },
+  { 'windwp/nvim-ts-autotag',            lazy = true },
+  { 'kyazdani42/nvim-web-devicons',      lazy = true }, -- File icons
   {
     'nvim-telescope/telescope.nvim',
     keys = { ';f', ';r', '\\', ';;', lazy = true },
     dependencies = "nvim-telescope/telescope-file-browser.nvim"
   },
-  { 'windwp/nvim-autopairs', lazy = true },
-  { 'norcalli/nvim-colorizer.lua', lazy = true },
-
-  { 'lewis6991/gitsigns.nvim', lazy = true }, -- Git diff marker
-  { 'akinsho/nvim-bufferline.lua', lazy = true },
-  { 'RRethy/vim-illuminate', lazy = true }, -- highlight on current cursol word
+  { 'windwp/nvim-autopairs',               lazy = true },
+  { 'norcalli/nvim-colorizer.lua',         lazy = true },
+  { 'lewis6991/gitsigns.nvim',             lazy = true }, -- Git diff marker
+  { 'akinsho/nvim-bufferline.lua',         lazy = true },
+  { 'RRethy/vim-illuminate',               lazy = true }, -- highlight on current cursol word
   { 'lukas-reineke/indent-blankline.nvim', lazy = true }, -- indent line
-  { 'numToStr/Comment.nvim', lazy = true }, --comment
-  { 'kevinhwang91/nvim-hlslens', lazy = true }, -- show count result search word
+  { 'numToStr/Comment.nvim',               lazy = true }, --comment
+  { 'kevinhwang91/nvim-hlslens',           lazy = true }, -- show count result search word
   {
     'TimUntersberger/neogit',
     dependencies = 'nvim-lua/plenary.nvim',
@@ -66,7 +65,7 @@ require('lazy').setup({
   {
     'akinsho/toggleterm.nvim', -- terminal on neovim
     version = '*',
-    keys = { 'to' },
+    keys = { '<C-\\>' },
     lazy = true
   },
 
