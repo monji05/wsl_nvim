@@ -31,9 +31,12 @@ require('lazy').setup({
 
   { 'glepnir/lspsaga.nvim',              lazy = true }, -- LSP UIs
   { 'L3MON4D3/LuaSnip',                  lazy = true },
-  { 'nvim-treesitter/nvim-treesitter',   lazy = true },
-  { 'windwp/nvim-ts-autotag',            lazy = true },
-  { 'kyazdani42/nvim-web-devicons',      lazy = true }, -- File icons
+  { 'nvim-treesitter/nvim-treesitter-textobjects',
+    dependencies = 'nvim-treesitter/nvim-treesitter',
+    lazy = true
+  },
+  { 'windwp/nvim-ts-autotag',       lazy = true },
+  { 'kyazdani42/nvim-web-devicons', lazy = true }, -- File icons
   {
     'nvim-telescope/telescope.nvim',
     keys = { ';f', ';r', '\\', ';;', lazy = true },
@@ -79,4 +82,5 @@ require('lazy').setup({
     ft = { "markdown" },
     lazy = true
   },
+  { 'j-hui/fidget.nvim', lazy = true }
 })
