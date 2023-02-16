@@ -82,5 +82,4 @@ require('lazy').setup({
     ft = { "markdown" },
     lazy = true
   },
-  { 'j-hui/fidget.nvim', lazy = true }
 })
