@@ -76,10 +76,4 @@ require('lazy').setup({
     'kylechui/nvim-surround',
     version = "*",
   },
-
-  {
-    'davidgranstrom/nvim-markdown-preview',
-    ft = { "markdown" },
-    lazy = true
-  },
 })
