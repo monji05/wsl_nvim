@@ -17,7 +17,7 @@ require('lazy').setup({
     dependencies = { 'tjdevries/colorbuddy.nvim', lazy = true },
   },
   { 'nvim-lualine/lualine.nvim', lazy = true }, -- Statusline
-  'nvim-lua/popup.nvim',
+  { 'nvim-lua/popup.nvim',       lazy = true },
   { 'onsails/lspkind-nvim',      lazy = true }, -- vscode-like pictograms
   { 'hrsh7th/cmp-nvim-lsp',      lazy = true }, -- nvim-cmp source for neovim's built-in LSP
   { 'hrsh7th/nvim-cmp', -- Completion
@@ -31,12 +31,9 @@ require('lazy').setup({
 
   { 'glepnir/lspsaga.nvim',              lazy = true }, -- LSP UIs
   { 'L3MON4D3/LuaSnip',                  lazy = true },
-  { 'nvim-treesitter/nvim-treesitter-textobjects',
-    dependencies = 'nvim-treesitter/nvim-treesitter',
-    lazy = true
-  },
-  { 'windwp/nvim-ts-autotag',       lazy = true },
-  { 'kyazdani42/nvim-web-devicons', lazy = true }, -- File icons
+  { 'nvim-treesitter/nvim-treesitter',   lazy = true },
+  { 'windwp/nvim-ts-autotag',            lazy = true },
+  { 'kyazdani42/nvim-web-devicons',      lazy = true }, -- File icons
   {
     'nvim-telescope/telescope.nvim',
     keys = { ';f', ';r', '\\', ';;', lazy = true },
@@ -75,5 +72,10 @@ require('lazy').setup({
   {
     'kylechui/nvim-surround',
     version = "*",
+  },
+  {
+    'davidgranstrom/nvim-markdown-preview',
+    ft = { 'markdown' },
+    lazy = true
   },
 })

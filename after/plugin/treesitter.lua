@@ -1,5 +1,4 @@
 local status, ts = pcall(require, "nvim-treesitter.configs")
-
 if (not status) then return end
 
 ts.setup {
@@ -27,11 +26,6 @@ ts.setup {
   autotag = {
     enable = true,
   },
-  textobjects = {
-    move = {
-      enable = true,
-    }
-  }
 }
 
 local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
