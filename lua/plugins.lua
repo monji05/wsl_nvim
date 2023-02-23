@@ -19,10 +19,9 @@ require('lazy').setup({
   { 'nvim-lualine/lualine.nvim', lazy = true }, -- Statusline
   { 'nvim-lua/popup.nvim',       lazy = true },
   { 'onsails/lspkind-nvim',      lazy = true }, -- vscode-like pictograms
-  { 'hrsh7th/cmp-nvim-lsp',      lazy = true }, -- nvim-cmp source for neovim's built-in LSP
+  { 'hrsh7th/cmp-nvim-lsp', }, -- nvim-cmp source for neovim's built-in LSP
   { 'hrsh7th/nvim-cmp', -- Completion
     dependencies = 'hrsh7th/cmp-buffer',
-    lazy = true
   },
   { 'neovim/nvim-lspconfig',             lazy = true }, -- LSP
   { 'williamboman/mason.nvim',           lazy = true },
